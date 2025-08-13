@@ -116,6 +116,7 @@ abstract class AbstractRequest implements RequestInterface
     public function getUrl()
     {
         $url = $this->url;
+        $this->mapArgs(get_object_vars($this));
         foreach ($this->urlParams as $param => $value) {
             $url = str_replace('{' . $param . '}', $value, $url);
         }
@@ -169,7 +170,7 @@ abstract class AbstractRequest implements RequestInterface
     public function mapArgs(array $args): void
     {
         $acceptableArgs = array_merge($this->acceptableArgs, $this->acceptableDefaultArgs);
-        $urlParams = [];
+        $urlParams = $this->urlParams;
         foreach ($acceptableArgs as $k => $v) {
             if (!isset($args[$k])) {
                 continue;
