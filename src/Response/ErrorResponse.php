@@ -13,26 +13,26 @@ use Metaregistrar\Api\Client\Annotation\DefaultValue;
 /**
  * Class Error
  * @package Metaregistrar\Api\Client\Response
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class ErrorResponse extends AbstractResponse implements ResponseInterface
 {
     /**
      * @var string
-     * @Type("string")
-     * @Description("The error code")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The error code')]
     protected $errorCode;
 
     /**
      * @var string
-     * @Type("string")
-     * @Description("Tells you what is wrong")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('Tells you what is wrong')]
     protected $errorMessage;
 
     /**

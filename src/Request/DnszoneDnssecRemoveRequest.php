@@ -15,8 +15,8 @@ use Metaregistrar\Api\Client\Response\DnszoneDnssecRemoveResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DnszoneDnssecRemoveRequest extends AbstractRequest
 {
     /**
@@ -30,9 +30,9 @@ class DnszoneDnssecRemoveRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("You must supply a name for the zone")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('You must supply a name for the zone')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
     /**
      * @var array

@@ -11,23 +11,23 @@ use JMS\Serializer\Annotation\Type;
  * Class Addr
  *
  * @package Metaregistrar\Api\Client\Fragment\Host
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class Addr
 {
     /**
      * @var string
-     * @Type("string")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
     protected $ipAddress;
 
     /**
      * @var string
-     * @Type("string")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
     protected $ip = 'v4';
 
     /**

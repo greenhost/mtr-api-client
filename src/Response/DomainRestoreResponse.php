@@ -12,8 +12,8 @@ use Metaregistrar\Api\Client\Annotation\MustBeFilled;
 /**
  * Class DomainRestoreResponse
  * @package Metaregistrar\Api\Client\Response
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainRestoreResponse extends AbstractResponse implements ResponseInterface
 {
 

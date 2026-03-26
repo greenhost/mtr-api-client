@@ -14,8 +14,8 @@ use Metaregistrar\Api\Client\Response\HostDeleteResponse;
 /**
  * Class HostInfoRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class HostDeleteRequest extends AbstractRequest
 {
     /**
@@ -29,15 +29,15 @@ class HostDeleteRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name = '';
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $hostname = '';
 
     /**

@@ -16,8 +16,8 @@ use Metaregistrar\Api\Client\Response\ContactCreateResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class ContactCreateRequest extends AbstractRequest
 {
     /**
@@ -36,54 +36,54 @@ class ContactCreateRequest extends AbstractRequest
     protected $expectedResponse = ContactCreateResponse::class;
     /**
      * @var PostalInfo
-     * @Type("Metaregistrar\Api\Client\Fragment\Contact\PostalInfo")
-     * @SerializedName("postalInfo")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('Metaregistrar\Api\Client\Fragment\Contact\PostalInfo')]
+    #[SerializedName('postalInfo')]
+    #[Expose]
+    #[MustBeFilled('yes')]
     protected $postalInfo;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("voice")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('voice')]
+    #[Expose]
+    #[MustBeFilled('yes')]
     protected $voice;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("fax")
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('fax')]
+    #[Expose]
     protected $fax;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("email")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('email')]
+    #[Expose]
+    #[MustBeFilled('yes')]
     protected $email;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("crmId")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('crmId')]
+    #[Expose]
     protected $crmId;
 
     /**
      * @var array|null
-     * @Type("array")
-     * @SerializedName("metadata")
-     * @Expose
      */
+    #[Type('array')]
+    #[SerializedName('metadata')]
+    #[Expose]
     protected $metadata;
 
     /**

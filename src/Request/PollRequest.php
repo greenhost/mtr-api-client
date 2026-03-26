@@ -14,8 +14,8 @@ use Metaregistrar\Api\Client\Response\PollResponse;
 /**
  * Class HostInfoRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class PollRequest extends AbstractRequest
 {
     /**
@@ -40,8 +40,8 @@ class PollRequest extends AbstractRequest
 
     /**
      * @var integer
-     * @description("Greater than 0 and less than 250")
      */
+    #[description('Greater than 0 and less than 250')]
     protected $limit=100;
 
     /**

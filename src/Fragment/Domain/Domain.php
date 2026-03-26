@@ -10,169 +10,169 @@ use JMS\Serializer\Annotation\Type;
 /**
  * Class Domain
  *
- * @ExclusionPolicy("all")
  * @SuppressWarnings(PHPMD.CyclomaticComplexity)
  * @SuppressWarnings(PHPMD.NPathComplexity)
  * @SuppressWarnings(PHPMD.ExcessiveClassComplexity)
  */
+#[ExclusionPolicy('all')]
 class Domain
 {
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("name")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('name')]
+    #[Expose]
     protected $name;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("roid")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('roid')]
+    #[Expose]
     protected $roid;
 
     /**
      * @var string[]
-     * @Type("array")
-     * @Expose
      */
+    #[Type('array')]
+    #[Expose]
     protected $status;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("registrant")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('registrant')]
+    #[Expose]
     protected $registrant;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("authorizationCode")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('authorizationCode')]
+    #[Expose]
     protected $authorizationCode;
 
 
     /**
      * @var DomainContact[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Domain\DomainContact>")
      *
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\DomainContact>')]
+    #[Expose]
     protected $contact;
 
     /**
      * @var string[]
-     * @Type("array<string>")
-     * @SerializedName("nameservers")
      *
-     * @Expose
      */
+    #[Type('array<string>')]
+    #[SerializedName('nameservers')]
+    #[Expose]
     protected $nameservers=[];
 
     /**
      * @var DomainHost[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Domain\DomainHost>")
      *
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\DomainHost>')]
+    #[Expose]
     protected $host;
 
 
     /**
      * @var boolean
-     * @Type("boolean")
-     * @SerializedName("autoRenew")
      *
-     * @Expose
      */
+    #[Type('boolean')]
+    #[SerializedName('autoRenew')]
+    #[Expose]
     protected $autoRenew;
 
     /**
      * @var integer
-     * @Type("integer")
-     * @SerializedName("autoRenewPeriod")
      *
-     * @Expose
      */
+    #[Type('integer')]
+    #[SerializedName('autoRenewPeriod')]
+    #[Expose]
     protected $autoRenewPeriod;
 
     /**
      * @var boolean
-     * @Type("boolean")
-     * @SerializedName("privacy")
      *
-     * @Expose
      */
+    #[Type('boolean')]
+    #[SerializedName('privacy')]
+    #[Expose]
     protected $privacy;
 
 
     /**
      * @var SecDnsKeyData[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Domain\SecDnsKeyData>")
-     * @SerializedName("keyData")
      *
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\SecDnsKeyData>')]
+    #[SerializedName('keyData')]
+    #[Expose]
     protected $keyData;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("clID")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('clID')]
+    #[Expose]
     protected $clId;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("crID")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('crID')]
+    #[Expose]
     protected $crId;
 
     /**
      * @var \DateTime
-     * @Type("DateTime")
-     * @SerializedName("crDate")
-     * @expose
      */
+    #[Type('DateTime')]
+    #[SerializedName('crDate')]
+    #[expose]
     protected $crDate;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("upID")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('upID')]
+    #[Expose]
     protected $upId;
 
     /**
      * @var \DateTime
-     * @Type("DateTime")
-     * @SerializedName("upDate")
-     * @expose
      */
+    #[Type('DateTime')]
+    #[SerializedName('upDate')]
+    #[expose]
     protected $upDate;
 
     /**
      * @var \DateTime
-     * @Type("DateTime")
-     * @SerializedName("exDate")
-     * @expose
      */
+    #[Type('DateTime')]
+    #[SerializedName('exDate')]
+    #[expose]
     protected $exDate;
 
     /**
@@ -182,19 +182,19 @@ class Domain
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("crmId")
      *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('crmId')]
+    #[Expose]
     protected $crmId;
 
     /**
      * @var array
-     * @Type("array")
-     * @SerializedName("metadata")
-     * @expose
      */
+    #[Type('array')]
+    #[SerializedName('metadata')]
+    #[expose]
     protected $metadata;
 
 

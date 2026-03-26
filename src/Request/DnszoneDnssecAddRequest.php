@@ -15,8 +15,8 @@ use Metaregistrar\Api\Client\Response\DnszoneDnssecAddResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DnszoneDnssecAddRequest extends AbstractRequest
 {
     /**
@@ -30,9 +30,9 @@ class DnszoneDnssecAddRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("You must supply a hostname")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('You must supply a hostname')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
     /**
      * @var array

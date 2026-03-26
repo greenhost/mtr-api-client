@@ -14,8 +14,8 @@ use Metaregistrar\Api\Client\Response\DomainInfoResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainInfoRequest extends AbstractRequest
 {
     /**
@@ -29,9 +29,9 @@ class DomainInfoRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
     /**
      * @var array

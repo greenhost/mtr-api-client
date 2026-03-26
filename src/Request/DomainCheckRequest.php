@@ -15,8 +15,8 @@ use Metaregistrar\Api\Client\Response\DomainCheckResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainCheckRequest extends AbstractRequest
 {
     /**
@@ -35,10 +35,10 @@ class DomainCheckRequest extends AbstractRequest
     protected $expectedResponse = DomainCheckResponse::class;
     /**
      * @var string[]
-     * @Type("array<string>")
-     * @Description("the name should be an array with IDN domains in punycode format")
-     * @Expose
      */
+    #[Type('array<string>')]
+    #[Expose]
+    #[Description('the name should be an array with IDN domains in punycode format')]
     protected $name=[];
 
     /**

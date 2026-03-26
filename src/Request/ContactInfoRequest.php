@@ -16,8 +16,8 @@ use Metaregistrar\Api\Client\Response\ContactInfoResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class ContactInfoRequest extends AbstractRequest
 {
     /**
@@ -31,8 +31,8 @@ class ContactInfoRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("yes")
      */
+    #[MustBeFilled('yes')]
     protected $id='';
 
     /**

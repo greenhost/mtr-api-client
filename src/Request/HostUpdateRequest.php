@@ -15,8 +15,8 @@ use Metaregistrar\Api\Client\Response\HostInfoResponse;
 /**
  * Class HostInfoRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class HostUpdateRequest extends AbstractRequest
 {
     /**
@@ -30,15 +30,15 @@ class HostUpdateRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name = '';
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $hostname = '';
 
     /**
@@ -48,20 +48,20 @@ class HostUpdateRequest extends AbstractRequest
 
     /**
      * @var Addr[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Host\Addr>")
-     * @MustBeFilled("yes")
-     * @Description("The Ip addresses to be added")
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Host\Addr>')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The Ip addresses to be added')]
     protected $add = [];
 
     /**
      * @var Addr[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Host\Addr>")
-     * @MustBeFilled("yes")
-     * @Description("The Ip addresses to be removed")
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Host\Addr>')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The Ip addresses to be removed')]
     protected $rem = [];
     /**
      * @var array

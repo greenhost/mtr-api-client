@@ -12,35 +12,35 @@ use Metaregistrar\Api\Client\Annotation\DefaultValue;
 /**
  * Class HostingCreateResponse
  * @package Metaregistrar\Api\Client\Response
- * @ExclusionPolicy("all")
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
+#[ExclusionPolicy('all')]
 abstract class AbstractResponse implements ResponseInterface
 {
     /**
      * @var string
-     * @Type("string")
-     * @Description("The response id")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The response id')]
     protected $responseId;
     /**
      * @var string
-     * @Type("string")
-     * @Description("The status of the request")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The status of the request')]
     protected $status;
 
     /**
      * @var string
-     * @Type("string")
-     * @Description("The message")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The message')]
     protected $message;
 
 
