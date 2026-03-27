@@ -15,8 +15,8 @@ use Metaregistrar\Api\Client\Response\DnszoneCreateResponse;
 /**
  * Class DnszoneCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DnszoneCreateRequest extends AbstractRequest
 {
 
@@ -32,28 +32,27 @@ class DnszoneCreateRequest extends AbstractRequest
 
     /**
      * @var string
-     * @Type("string")
-     * @MustBeFilled("You must supply a name for the zone")
-     * @Description("the name should be a IDN domain in punycode format")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('You must supply a name for the zone')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
 
 
     /**
      * @var boolean
-     * @Type("boolean")
-     * @Expose
      */
+    #[Type('boolean')]
+    #[Expose]
     protected $premium = false;
 
 
     /**
      * @var Content[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Dns\Content>")
-     *
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Dns\Content>')]
+    #[Expose]
     protected $records = [];
 
 

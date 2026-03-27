@@ -13,20 +13,18 @@ use JMS\Serializer\Annotation\XmlValue;
  * Class DomainHost
  *
  * @package Metaregistrar\Api\Client\Fragment\Domain
- * @ExclusionPolicy("all")
- * @XmlNamespace(uri="urn:ietf:params:xml:ns:epp-1.0")
- * @XmlNamespace(uri="urn:ietf:params:xml:ns:domain-1.0", prefix="domain")
  */
+#[ExclusionPolicy('all')]
+#[XmlNamespace(uri: 'urn:ietf:params:xml:ns:epp-1.0')]
+#[XmlNamespace(uri: 'urn:ietf:params:xml:ns:domain-1.0', prefix: 'domain')]
 class DomainHost
 {
     /**
      * @var string
-     * @Type("string")
-     * @XmlValue
-
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[XmlValue]
+    #[Expose]
     protected $name;
 
     /**

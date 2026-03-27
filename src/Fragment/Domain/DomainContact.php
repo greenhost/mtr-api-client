@@ -14,29 +14,27 @@ use JMS\Serializer\Annotation\XmlValue;
  * Class DomainContact
  *
  * @package Metaregistrar\Api\Client\Fragment\Domain
- * @ExclusionPolicy("all")
- * @XmlNamespace(uri="urn:ietf:params:xml:ns:epp-1.0")
- * @XmlNamespace(uri="urn:ietf:params:xml:ns:domain-1.0", prefix="domain")
  */
+#[ExclusionPolicy('all')]
+#[XmlNamespace(uri: 'urn:ietf:params:xml:ns:epp-1.0')]
+#[XmlNamespace(uri: 'urn:ietf:params:xml:ns:domain-1.0', prefix: 'domain')]
 class DomainContact
 {
     /**
      * @var string
-     * @Type("string")
-     * @XmlValue
-     * @XmlElement(cdata=false,namespace="urn:ietf:params:xml:ns:domain-1.0")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[XmlValue]
+    #[XmlElement(cdata: false, namespace: 'urn:ietf:params:xml:ns:domain-1.0')]
+    #[Expose]
     protected $id;
 
     /**
      * @var string
-     * @Type("string")
-     * @XmlAttribute
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[XmlAttribute]
+    #[Expose]
     protected $type;
 
     /**

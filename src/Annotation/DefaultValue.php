@@ -3,14 +3,15 @@
 namespace Metaregistrar\Api\Client\Annotation;
 
 /**
- * @Annotation
- * @Target({"PROPERTY", "METHOD","ANNOTATION"})
+ * DefaultValue is a custom attribute with a required value parameter
  */
+#[\Attribute(\Attribute::TARGET_METHOD | \Attribute::TARGET_PROPERTY)]
 final class DefaultValue
 {
     /**
-     * @var string
-     * @Required
+     * @param string $value
      */
-    public $value;
+    public function __construct(public string $value)
+    {
+    }
 }

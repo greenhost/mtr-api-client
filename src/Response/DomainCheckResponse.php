@@ -13,19 +13,19 @@ use Metaregistrar\Api\Client\Fragment\Domain\CheckResult;
 /**
  * Class DnszoneInfoResponse
  * @package Metaregistrar\Api\Client\Response
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainCheckResponse extends AbstractResponse implements ResponseInterface
 {
 
 
     /**
      * @var CheckResult[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Domain\CheckResult>")
-     * @Description("The results of the domain check")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\CheckResult>')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The results of the domain check')]
     protected $results;
 
     /**

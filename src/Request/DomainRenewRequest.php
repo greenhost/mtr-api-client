@@ -14,8 +14,8 @@ use Metaregistrar\Api\Client\Response\DomainRenewResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainRenewRequest extends AbstractRequest
 {
     /**
@@ -34,9 +34,9 @@ class DomainRenewRequest extends AbstractRequest
     protected $expectedResponse = DomainRenewResponse::class;
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
 
 
@@ -49,10 +49,10 @@ class DomainRenewRequest extends AbstractRequest
 
     /**
      * @var integer
-     * @Type("integer")
-     * @MustBeFilled("You must supply a period in months")
-     * @Expose
      */
+    #[Type('integer')]
+    #[Expose]
+    #[MustBeFilled('You must supply a period in months')]
     protected $period=12;
 
     /**

@@ -17,8 +17,8 @@ use Metaregistrar\Api\Client\Response\DomainUpdateResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainUpdateRequest extends AbstractRequest
 {
     /**
@@ -39,9 +39,9 @@ class DomainUpdateRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
     /**
      * @var array
@@ -71,25 +71,22 @@ class DomainUpdateRequest extends AbstractRequest
     }
     /**
      * @var Chg
-     * @Type("Metaregistrar\Api\Client\Fragment\Domain\Chg")
-     *
-     * @Expose
      */
+    #[Type('Metaregistrar\Api\Client\Fragment\Domain\Chg')]
+    #[Expose]
     protected $chg;
     /**
      * @var Add
-     * @Type("Metaregistrar\Api\Client\Fragment\Domain\Add")
-     *
-     * @Expose
      */
+    #[Type('Metaregistrar\Api\Client\Fragment\Domain\Add')]
+    #[Expose]
     protected $add;
 
     /**
      * @var Rem
-     * @Type("Metaregistrar\Api\Client\Fragment\Domain\Rem")
-     *
-     * @Expose
      */
+    #[Type('Metaregistrar\Api\Client\Fragment\Domain\Rem')]
+    #[Expose]
     protected $rem;
 
     /**

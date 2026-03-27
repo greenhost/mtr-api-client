@@ -12,52 +12,48 @@ use JMS\Serializer\Annotation\Type;
  * Class Addr
  *
  * @package Metaregistrar\Api\Client\Fragment\Contact
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class Addr
 {
     /**
      * @var string[]|null
-     * @Type("array<string>")
-     * @SerializedName("street")
-     * @Expose
      */
+    #[Type('array<string>')]
+    #[SerializedName('street')]
+    #[Expose]
     protected $street = [];
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("city")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('city')]
+    #[Expose]
     protected $city;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("sp")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('sp')]
+    #[Expose]
     protected $sp;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("pc")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('pc')]
+    #[Expose]
     protected $pc;
 
     /**
      * @var string|null
-     * @Type("string")
-     * @SerializedName("cc")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('cc')]
+    #[Expose]
     protected $cc;
 
     /**

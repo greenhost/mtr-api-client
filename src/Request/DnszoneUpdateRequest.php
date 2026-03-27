@@ -17,8 +17,8 @@ use Metaregistrar\Api\Client\Response\DnszoneUpdateResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DnszoneUpdateRequest extends AbstractRequest
 {
     /**
@@ -33,9 +33,9 @@ class DnszoneUpdateRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("You must supply a name for the zone")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('You must supply a name for the zone')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
     /**
      * @var array
@@ -46,18 +46,16 @@ class DnszoneUpdateRequest extends AbstractRequest
 
     /**
      * @var Content[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Dns\Content>")
-     *
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Dns\Content>')]
+    #[Expose]
     protected $add=[];
 
     /**
      * @var Content[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Dns\Content>")
-     *
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Dns\Content>')]
+    #[Expose]
     protected $rem=[];
 
     /**

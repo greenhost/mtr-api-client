@@ -14,8 +14,8 @@ use Metaregistrar\Api\Client\Response\DomainTransferInfoResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainTransferResendFOARequest extends AbstractRequest
 {
     /**
@@ -35,9 +35,9 @@ class DomainTransferResendFOARequest extends AbstractRequest
     protected $expectedResponse = DomainTransferInfoResponse::class;
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name='';
     /**
      * @var array

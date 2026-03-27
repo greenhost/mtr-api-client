@@ -15,8 +15,8 @@ use Metaregistrar\Api\Client\Response\HostCreateResponse;
 /**
  * Class DomainListingCreateRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class HostCreateRequest extends AbstractRequest
 {
     /**
@@ -44,29 +44,28 @@ class HostCreateRequest extends AbstractRequest
 
     /**
      * @var string
-     * @MustBeFilled("yes")
-     * @Description("the name should be a IDN domain in punycode format")
      */
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $name = '';
 
     /**
      * @var string
-     * @Type("string")
-     * @MustBeFilled("You must supply a name for the domain")
-     * @Description("the name should be a IDN domain in punycode format")
-     * @MustBeFilled("yes")
-     * @Expose
      */
+    #[Type('string')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('the name should be a IDN domain in punycode format')]
     protected $hostname='';
 
 
     /**
      * @var Addr[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Host\Addr>")
-     * @MustBeFilled("yes")
-     * @Description("The Ip addresses attached to the ")
-     * @Expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Host\Addr>')]
+    #[Expose]
+    #[MustBeFilled('yes')]
+    #[Description('The Ip addresses attached to the ')]
     protected $addr = [];
 
     /**

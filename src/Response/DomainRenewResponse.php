@@ -11,8 +11,8 @@ use Metaregistrar\Api\Client\Fragment\Domain\Domain;
 /**
  * Class DnszoneInfoResponse
  * @package Metaregistrar\Api\Client\Response
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class DomainRenewResponse extends DomainInfoResponse implements ResponseInterface
 {
     /**

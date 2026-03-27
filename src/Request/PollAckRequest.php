@@ -14,8 +14,8 @@ use Metaregistrar\Api\Client\Response\PollAckResponse;
 /**
  * Class HostInfoRequest
  * @package Metaregistrar\Api\Client\Request
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class PollAckRequest extends AbstractRequest
 {
     /**
@@ -34,9 +34,9 @@ class PollAckRequest extends AbstractRequest
 
     /**
      * @var integer[]
-     * @Type("array<integer>")
-     * @Expose
      */
+    #[Type('array<integer>')]
+    #[Expose]
     protected $pollIds=[];
 
     /**

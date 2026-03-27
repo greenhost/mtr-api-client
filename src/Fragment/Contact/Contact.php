@@ -11,140 +11,129 @@ use JMS\Serializer\Annotation\Type;
  * Class Contact
  *
  * @package Metaregistrar\Api\Client\Fragment\Contact
- * @ExclusionPolicy("all")
  */
+#[ExclusionPolicy('all')]
 class Contact
 {
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("id")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('id')]
+    #[Expose]
     protected $id;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("roid")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('roid')]
+    #[Expose]
     protected $roid;
 
     /**
      * @var string[]
-     * @Type("array")
-     *
-     * @Expose
      */
+    #[Type('array')]
+    #[Expose]
     protected $status;
 
     /**
      * @var PostalInfo
-     * @Type("Metaregistrar\Api\Client\Fragment\Contact\PostalInfo")
-     * @SerializedName("postalInfo")
-     *
-     * @Expose
      */
+    #[Type('Metaregistrar\Api\Client\Fragment\Contact\PostalInfo')]
+    #[SerializedName('postalInfo')]
+    #[Expose]
     protected $postalInfo;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("voice")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('voice')]
+    #[Expose]
     protected $voice;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("fax")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('fax')]
+    #[Expose]
     protected $fax;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("email")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('email')]
+    #[Expose]
     protected $email;
 
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("clID")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('clID')]
+    #[Expose]
     protected $clId;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("crID")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('crID')]
+    #[Expose]
     protected $crId;
 
     /**
      * @var \DateTime
-     * @Type("DateTime")
-     * @SerializedName("crDate")
-     * @expose
      */
+    #[Type('DateTime')]
+    #[SerializedName('crDate')]
+    #[expose]
     protected $crDate;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("upID")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('upID')]
+    #[Expose]
     protected $upId;
 
     /**
      * @var \DateTime
-     * @Type("DateTime")
-     * @SerializedName("upDate")
-     * @expose
      */
+    #[Type('DateTime')]
+    #[SerializedName('upDate')]
+    #[expose]
     protected $upDate;
 
     /**
      * @var ContactProperty[]
-     * @Type("array<Metaregistrar\Api\Client\Fragment\Contact\ContactProperty>")
-     * @SerializedName("property")
-     * @expose
      */
+    #[Type('array<Metaregistrar\Api\Client\Fragment\Contact\ContactProperty>')]
+    #[SerializedName('property')]
+    #[expose]
     protected $property;
 
     /**
      * @var string
-     * @Type("string")
-     * @SerializedName("crmId")
-     *
-     * @Expose
      */
+    #[Type('string')]
+    #[SerializedName('crmId')]
+    #[Expose]
     protected $crmId;
 
     /**
      * @var array
-     * @Type("array")
-     * @SerializedName("metadata")
-     * @expose
      */
+    #[Type('array')]
+    #[SerializedName('metadata')]
+    #[expose]
     protected $metadata;
 
     /**
