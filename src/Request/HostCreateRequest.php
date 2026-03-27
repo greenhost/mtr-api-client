@@ -54,7 +54,6 @@ class HostCreateRequest extends AbstractRequest
      */
     #[Type('string')]
     #[Expose]
-    #[MustBeFilled('You must supply a name for the domain')]
     #[MustBeFilled('yes')]
     #[Description('the name should be a IDN domain in punycode format')]
     protected $hostname='';
