@@ -18,7 +18,6 @@ class DomainListItem
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[Expose]
@@ -33,7 +32,6 @@ class DomainListItem
 
     /**
      * @var boolean
-     *
      */
     #[Type('boolean')]
     #[Expose]
@@ -41,14 +39,12 @@ class DomainListItem
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[Expose]
     protected $crmId;
     /**
      * @var array
-     *
      */
     #[Type('array')]
     #[Expose]

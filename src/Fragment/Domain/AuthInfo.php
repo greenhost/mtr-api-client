@@ -16,7 +16,6 @@ class AuthInfo
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('pw')]

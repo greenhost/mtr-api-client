@@ -15,7 +15,6 @@ class Host
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('name')]
@@ -24,7 +23,6 @@ class Host
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('roid')]
@@ -33,7 +31,6 @@ class Host
 
     /**
      * @var string[]
-     *
      */
     #[Type('array')]
     #[Expose]
@@ -41,7 +38,6 @@ class Host
 
     /**
      * @var Addr[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Host\Addr>')]
     #[Expose]
@@ -49,7 +45,6 @@ class Host
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('clID')]
@@ -58,7 +53,6 @@ class Host
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('crID')]

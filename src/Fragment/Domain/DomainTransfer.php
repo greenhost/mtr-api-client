@@ -18,7 +18,6 @@ class DomainTransfer
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('name')]

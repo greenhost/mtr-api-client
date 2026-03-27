@@ -46,7 +46,6 @@ class DnszoneUpdateRequest extends AbstractRequest
 
     /**
      * @var Content[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Dns\Content>')]
     #[Expose]
@@ -54,7 +53,6 @@ class DnszoneUpdateRequest extends AbstractRequest
 
     /**
      * @var Content[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Dns\Content>')]
     #[Expose]

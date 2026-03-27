@@ -24,7 +24,6 @@ class Addr
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[Expose]

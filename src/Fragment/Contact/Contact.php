@@ -18,7 +18,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('id')]
@@ -27,7 +26,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('roid')]
@@ -36,7 +34,6 @@ class Contact
 
     /**
      * @var string[]
-     *
      */
     #[Type('array')]
     #[Expose]
@@ -44,7 +41,6 @@ class Contact
 
     /**
      * @var PostalInfo
-     *
      */
     #[Type('Metaregistrar\Api\Client\Fragment\Contact\PostalInfo')]
     #[SerializedName('postalInfo')]
@@ -53,7 +49,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('voice')]
@@ -62,7 +57,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('fax')]
@@ -71,7 +65,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('email')]
@@ -81,7 +74,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('clID')]
@@ -90,7 +82,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('crID')]
@@ -107,7 +98,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('upID')]
@@ -132,7 +122,6 @@ class Contact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('crmId')]

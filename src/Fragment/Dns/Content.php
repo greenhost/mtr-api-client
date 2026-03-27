@@ -17,7 +17,6 @@ class Content
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('name')]
@@ -58,7 +57,6 @@ class Content
 
     /**
      * @var boolean
-     *
      */
     #[Type('boolean')]
     #[SerializedName('disabled')]

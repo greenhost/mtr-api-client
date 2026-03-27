@@ -20,7 +20,6 @@ class Add
 {
     /**
      * @var string[]
-     *
      */
     #[Type('array<string>')]
     #[SerializedName('nameservers')]
@@ -29,14 +28,12 @@ class Add
 
     /**
      * @var DomainContact[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\DomainContact>')]
     #[Expose]
     protected $contact = [];
     /**
      * @var string[]
-     *
      */
     #[Type('array<string>')]
     #[Expose]
@@ -45,7 +42,6 @@ class Add
 
     /**
      * @var SecDnsKeyData[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\SecDnsKeyData>')]
     #[Expose]

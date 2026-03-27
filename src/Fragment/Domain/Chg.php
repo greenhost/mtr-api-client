@@ -19,7 +19,6 @@ class Chg
 {
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('registrant')]
@@ -27,7 +26,6 @@ class Chg
     protected $registrant;
     /**
      * @var boolean|null
-     *
      */
     #[Type('boolean')]
     #[SerializedName('privacy')]
@@ -36,7 +34,6 @@ class Chg
 
     /**
      * @var boolean|null
-     *
      */
     #[Type('boolean')]
     #[SerializedName('autoRenew')]
@@ -44,7 +41,6 @@ class Chg
     protected $autoRenew;
     /**
      * @var boolean|null
-     *
      */
     #[Type('boolean')]
     #[SerializedName('regenerateAuthcode')]
@@ -53,7 +49,6 @@ class Chg
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('crmId')]
@@ -62,7 +57,6 @@ class Chg
 
     /**
      * @var array|null
-     *
      */
     #[Type('array')]
     #[SerializedName('metadata')]

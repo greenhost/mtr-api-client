@@ -22,7 +22,6 @@ class DomainContact
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[XmlValue]
@@ -32,7 +31,6 @@ class DomainContact
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[XmlAttribute]

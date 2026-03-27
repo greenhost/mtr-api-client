@@ -26,7 +26,6 @@ class PostalInfo
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('roid')]
@@ -35,7 +34,6 @@ class PostalInfo
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('name')]
@@ -44,7 +42,6 @@ class PostalInfo
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('org')]
@@ -53,7 +50,6 @@ class PostalInfo
 
     /**
      * @var Addr
-     *
      */
     #[Type('Metaregistrar\Api\Client\Fragment\Contact\Addr')]
     #[SerializedName('addr')]

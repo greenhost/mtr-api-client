@@ -19,7 +19,6 @@ class Domain
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('name')]
@@ -28,7 +27,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('roid')]
@@ -44,7 +42,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('registrant')]
@@ -53,7 +50,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('authorizationCode')]
@@ -63,7 +59,6 @@ class Domain
 
     /**
      * @var DomainContact[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\DomainContact>')]
     #[Expose]
@@ -71,7 +66,6 @@ class Domain
 
     /**
      * @var string[]
-     *
      */
     #[Type('array<string>')]
     #[SerializedName('nameservers')]
@@ -80,7 +74,6 @@ class Domain
 
     /**
      * @var DomainHost[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\DomainHost>')]
     #[Expose]
@@ -89,7 +82,6 @@ class Domain
 
     /**
      * @var boolean
-     *
      */
     #[Type('boolean')]
     #[SerializedName('autoRenew')]
@@ -98,7 +90,6 @@ class Domain
 
     /**
      * @var integer
-     *
      */
     #[Type('integer')]
     #[SerializedName('autoRenewPeriod')]
@@ -107,7 +98,6 @@ class Domain
 
     /**
      * @var boolean
-     *
      */
     #[Type('boolean')]
     #[SerializedName('privacy')]
@@ -117,7 +107,6 @@ class Domain
 
     /**
      * @var SecDnsKeyData[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\SecDnsKeyData>')]
     #[SerializedName('keyData')]
@@ -126,7 +115,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('clID')]
@@ -135,7 +123,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('crID')]
@@ -152,7 +139,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('upID')]
@@ -182,7 +168,6 @@ class Domain
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('crmId')]

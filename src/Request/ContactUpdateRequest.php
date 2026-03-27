@@ -107,7 +107,6 @@ class ContactUpdateRequest extends AbstractRequest
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('crmId')]
@@ -116,7 +115,6 @@ class ContactUpdateRequest extends AbstractRequest
 
     /**
      * @var array|null
-     *
      */
     #[Type('array')]
     #[SerializedName('metadata')]

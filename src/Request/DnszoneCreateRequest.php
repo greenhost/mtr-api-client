@@ -50,7 +50,6 @@ class DnszoneCreateRequest extends AbstractRequest
 
     /**
      * @var Content[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Dns\Content>')]
     #[Expose]

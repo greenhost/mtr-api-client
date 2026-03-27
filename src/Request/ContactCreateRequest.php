@@ -71,7 +71,6 @@ class ContactCreateRequest extends AbstractRequest
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('crmId')]

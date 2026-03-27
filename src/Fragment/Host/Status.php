@@ -17,7 +17,6 @@ class Status
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[Expose]
@@ -25,7 +24,6 @@ class Status
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('s')]
@@ -34,7 +32,6 @@ class Status
 
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[SerializedName('lang')]

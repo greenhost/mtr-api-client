@@ -52,7 +52,6 @@ class DomainCreateRequest extends AbstractRequest
 
     /**
      * @var DomainContact[]
-     *
      */
     #[Type('array<Metaregistrar\Api\Client\Fragment\Domain\DomainContact>')]
     #[Expose]

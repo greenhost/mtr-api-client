@@ -71,14 +71,12 @@ class DomainUpdateRequest extends AbstractRequest
     }
     /**
      * @var Chg
-     *
      */
     #[Type('Metaregistrar\Api\Client\Fragment\Domain\Chg')]
     #[Expose]
     protected $chg;
     /**
      * @var Add
-     *
      */
     #[Type('Metaregistrar\Api\Client\Fragment\Domain\Add')]
     #[Expose]
@@ -86,7 +84,6 @@ class DomainUpdateRequest extends AbstractRequest
 
     /**
      * @var Rem
-     *
      */
     #[Type('Metaregistrar\Api\Client\Fragment\Domain\Rem')]
     #[Expose]

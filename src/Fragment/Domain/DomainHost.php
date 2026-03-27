@@ -21,7 +21,6 @@ class DomainHost
 {
     /**
      * @var string
-     *
      */
     #[Type('string')]
     #[XmlValue]

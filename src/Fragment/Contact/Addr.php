@@ -26,7 +26,6 @@ class Addr
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('city')]
@@ -35,7 +34,6 @@ class Addr
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('sp')]
@@ -44,7 +42,6 @@ class Addr
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('pc')]
@@ -53,7 +50,6 @@ class Addr
 
     /**
      * @var string|null
-     *
      */
     #[Type('string')]
     #[SerializedName('cc')]
