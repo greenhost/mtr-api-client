@@ -3,14 +3,15 @@
 namespace Metaregistrar\Api\Client\Annotation;
 
 /**
- * @Annotation
- * @Target({"PROPERTY", "METHOD","ANNOTATION"})
+ * MustBe is a custom attribute with a required value parameter
  */
+#[\Attribute(\Attribute::TARGET_METHOD | \Attribute::TARGET_PROPERTY)]
 final class MustBe
 {
     /**
-     * @var string
-     * @Required
+     * @param string $value
      */
-    public $value;
+    public function __construct(public string $value)
+    {
+    }
 }
